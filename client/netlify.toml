@@ -1,0 +1,11 @@
+[build]
+    base = "client/"
+    publish = "client/build/"
+    command = "yarn introspect-schema && yarn generate-typings && yarn build"
+
+[context]
+    [staging]
+        [environment]
+            REACT_APP_COOKIE_DOMAIN = "edmit-app.netlify.com"
+            REACT_APP_API_GRAPHQL_PATH = "https://api2.edmitcloud.net/graphql"
+            REACT_APP_STRIPE_PUBLISHABLE_KEY = "pk_live_aOeqTFbqjstyF9L2WBLCi8Lc"

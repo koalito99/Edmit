@@ -1,0 +1,529 @@
+/**********************************
+
+Table of Contents
+
+  1. Typography
+  2. Icons
+  3. Colors
+  4. Shadows
+
+**********************************/
+
+/******
+
+  1. Typography
+
+******/
+
+body {
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lato {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+.merriweather {
+  font-family: 'Merriweather', georgia, times, serif;
+}
+
+h1,
+.t-h1 {
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+h2,
+.t-h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h3,
+.t-h3 {
+  font-size: 1.625rem;
+  line-height: 2.0625rem;
+}
+
+h4,
+.t-h4 {
+  font-size: 1.1875rem;
+  line-height: 1.625rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.t-xlarge {
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+}
+
+.t-large {
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+}
+
+.t-medium {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.t-small {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+
+.t-button-l {
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  /* Controls Height of Button */
+}
+
+.t-button-m {
+  font-size: 1rem;
+  line-height: 2rem;
+  /* Controls Height of Button */
+}
+
+.t-button-s {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  /* Controls Height of Button */
+}
+
+
+@media screen and (max-width:30em) {
+  h1,
+  .t-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  h2,
+  .t-h2 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+  h3
+  .t-h3 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+  h4,
+  .t-h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .t-large {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+
+/******
+
+  2. Icons
+
+******/
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: inherit;
+  font-style: normal;
+  font-size: inherit;
+  /* Preferred icon size */
+  line-height: inherit;
+  vertical-align: bottom;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  display: inline-flex;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.icon-carousel {
+  font-size: 2.5rem;
+}
+
+.icon-xxlarge {
+  font-size: 1.75rem;
+}
+
+.icon-xlarge {
+  font-size: 1.5rem;
+}
+
+.icon-large {
+  font-size: 1.25rem;
+}
+
+.icon-medium {
+  font-size: 1rem;
+}
+
+.icon-small {
+  font-size: 0.875rem;
+}
+
+.icon-animated-loading {
+  animation: spin infinite 1200ms linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.bg-icon {
+  position: fixed;
+  font-size: 400px;
+  color: rgba(0, 0, 0, .05);
+  top: 75px;
+  left: -95px;
+  z-index: -99;
+}
+
+
+/******
+
+  3. Colors
+
+******/
+
+/* Dim Gray */
+
+.gray-dim, .hover-gray-dim:focus, .hover-gray-dim:hover {
+  color: #6F6868;
+}
+
+.bg-gray-dim, .hover-bg-gray-dim:focus, .hover-bg-gray-dim:hover {
+  background-color: #6F6868;
+}
+
+.b--gray-dim, .hover-b--gray-dim:focus, .hover-b--gray-dim:hover {
+  border-color: #6F6868;
+}
+
+/* Muted Gray */
+
+.gray-muted, .hover-gray-muted:focus, .hover-gray-muted:hover {
+  color: #9A9797;
+}
+
+.bg-gray-muted, .hover-bg-gray-muted:focus, .hover-bg-gray-muted:hover {
+  background-color: #9A9797;
+}
+
+.b--gray-muted, .hover-b--gray-muted:focus, .hover-b--gray-muted:hover {
+  border-color: #9A9797;
+}
+
+/* Light Gray */
+
+.gray-light, .hover-gray-light:focus, .hover-gray-light:hover {
+  color: #EDEDED;
+}
+
+.bg-gray-light, .hover-bg-gray-light:focus, .hover-bg-gray-light:hover {
+  background-color: #EDEDED;
+}
+
+.b--gray-light, .hover-b--gary-light:focus, .hover-b--gray-light:hover {
+  border-color: #EDEDED;
+}
+
+/* Offwhite */
+
+.offwhite, .hover-offwhite:focus, .hover-offwhite:hover {
+  color: #F7F7F7;
+}
+
+.bg-offwhite, .hover-bg-offwhite:focus, .hover-bg-offwhite:hover {
+  background-color: #F7F7F7;
+}
+
+.b--offwhite, .hover-b--offwhite:focus, .hover-b--offwhite:hover {
+  border-color: #F7F7F7;
+}
+
+/* Black */
+
+.black, .hover-black:focus, .hover-black:hover {
+  color: #333333;
+}
+
+.bg-black, .hover-bg-black:focus, .hover-bg-black:hover {
+  background-color: #333333;
+}
+
+.b--black, .hover-b-black:focus, .hover-b-black:hover {
+  border-color: #333333;
+}
+
+/* White */
+
+.white, .hover-white:focus, .hover-white:hover {
+  color: #FFFFFF;
+}
+
+.bg-white, .hover-bg-white:focus, .hover-bg-white:hover {
+  background-color: #FFFFFF;
+}
+
+.b--white, .hover-b--white:focus, .hover-b--white:hover {
+  border-color: #FFFFFF;
+}
+
+/* Crimson */
+
+.crimson, .hover-crimson:focus, .hover-crimson:hover {
+  color: #921313;
+}
+
+.bg-crimson, .hover-bg-crimson:focus, .hover-bg-crimson:hover {
+  background-color: #921313;
+}
+
+.b--crimson, .hover-b--crimson:focus, .hover-b--crimson:hover {
+  border-color: #921313;
+}
+
+/* Crimson Dark */
+
+.crimson-dark, .hover-crimson-dark:focus, .hover-crimson-dark:hover {
+  color: #5f0c0c;
+}
+
+.bg-crimson-dark, .hover-bg-crimson-dark:focus, .hover-bg-crimson-dark:hover {
+  background-color: #5f0c0c;
+}
+
+.b--crimson-dark, .hover-b--crimson-dark:focus, .hover-b--crimson-dark:hover {
+  border-color: #5f0c0c;
+}
+
+/* Red Error */
+
+.red-error, .hover-red-error:focus, .hover-red-error:hover {
+  color: #E36E6E;
+}
+
+.bg-red-error, .hover-bg-red-error:focus, .hover-bg-red-error:hover {
+  background-color: #E36E6E;
+}
+
+.b--red-error, .hover-b--red-error:focus, .hover-b--red-error:hover {
+  border-color: #E36E6E;
+}
+
+/* Green Success */
+
+.green-success, .hover-green-success:focus, .hover-green-success:hover {
+  color: #65B29E;
+}
+
+.bg-green-success, .hover-bg-green-success:focus, .hover-bg-green-success:hover {
+  background-color: #65B29E;
+}
+
+.b--green-success, .hover-b--green-success:focus, .hover-b--green-success:hover {
+  border-color: #65B29E;
+}
+
+@media screen and (min-width:30em) {
+  .white-ns {
+    color: #FFFFFF;
+  }
+  .gray-light-ns {
+    color: #EDEDED;
+  }
+}
+
+/******
+
+  4. Shadows
+
+******/
+
+.hover-shadow-button:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .05)
+}
+
+.shadow-nav,
+.shadow-footer {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .05)
+}
+
+.shadow-nav-drawer {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .05), 16px 0 40px 0 rgba(0, 0, 0, .05);
+}
+
+.shadow-modal {
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, .05)
+}
+
+.shadow-progress-bar {
+  box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, .025)
+}
+
+.shadow-dropdown {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, .05)
+}
+
+.shadow-toast {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, .08)
+}
+
+.shadow-recommendations-slideout {
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, .125)
+}
+
+.shadow-none {
+  box-shadow: none;
+}
+
+@media screen and (min-width:60em) {
+  .shadow-none-l {
+    box-shadow: none;
+  }
+}
+
+.f9{
+  font-size: 0.45em;
+}
+
+.lh-solid-1{
+  line-height: 0;
+}
+
+.fw9-ns-imp {
+  font-weight: 900 !important;
+}
+
+.ma-auto{
+  margin: auto;
+}
+
+.report-link-menu.active{
+  color: green;
+}
+
+.report-link-menu.active:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: .15rem solid green;
+}
+.box-topSecHeader{ margin:0.4rem; width:3.2rem; height:3.2rem; }
+.text-topSecHeader{ overflow:hidden; text-overflow:ellipsis; padding-right:10px; max-lines: 2; }
+
+@media(max-width: 1024px){
+  .text-topSecHeader{ font-size:0.9rem; }
+  .text-addCollege{ font-size:0.9rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+}
+
+@media(max-width:800px){
+  .box-topSecHeaderInn{ width:auto; }
+  .text-topSecHeader{ display:none; }
+}
+
+@media(max-width:579px){
+  .report-stickyNav{ width:100%; height:50px !important; display:table; text-align:center; }
+  .report-stickyNav > div:first-child{ display:table-cell; vertical-align:middle; }
+  .report-stickyNavInn .report-link-menu{ font-size:0.9rem; line-height: normal; padding:2px 8px; display:inline-block; }
+  .report-stickyNavInn .report-link-menu.active:after{ display:none; }
+}
+@media(max-width:480px){
+  .box-topSecHeaderInn{ display:inline-block; border:1px solid #EEE; }
+}
+
+.b-0{
+  border: none;
+}
+.box-shadow-0{
+  box-shadow: none;
+}
+
+.brown-color-1{
+  color: #921313;
+}
+
+.box-CompareCard{
+  width: 35%;
+  margin-left: 2rem; 
+  margin-top: 2rem; 
+  display: inline-block;
+}
+
+.box-compareGrid{
+  display: inline-block;
+  width: 100%;
+  text-align: center;  
+}
+
+.vh-10{
+  height: 10vh;
+}
+
+.head-CompareGrid{
+  margin-left: 12rem;
+}
+
+.search-colleges-overlay{
+  display: none;
+  z-index: 999;
+  width: 24%;
+  min-height: 24vh;
+  padding: 2rem;
+  background: #FFF;
+  position: absolute;
+  top: 6.5rem;
+  left: 15rem;
+}
+
+.show-search-overlay{
+  display: block;
+}
+
+.line {
+  left: 49%;
+  width: 1px;
+}
+
+.wordwrapper {
+  height: 12px;
+  margin-top: -12px;
+}
+
+
+.college-single-nav{
+  padding: 0;
+}
+
+.college-cost-section{
+  margin-top: 13rem;
+}

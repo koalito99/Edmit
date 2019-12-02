@@ -1,0 +1,61 @@
+{
+  "name": "@edmit/learn",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "apollo-link": "^1.2.8",
+    "apollo-link-batch-http": "^1.2.11",
+    "apollo-link-retry": "^2.2.10",
+    "dotenv": "^6.2.0",
+    "gatsby": "^2.0.102",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-google-analytics": "^2.0.8",
+    "gatsby-plugin-hubspot": "^1.0.0",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-plugin-robots-txt": "^1.3.0",
+    "gatsby-plugin-segment-js": "^2.0.1",
+    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby-plugin-sitemap": "^2.0.3",
+    "gatsby-plugin-typescript": "^2.0.2",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-graphql": "^2.0.8",
+    "gatsby-transformer-json": "^2.1.11",
+    "gatsby-transformer-remark": "^2.1.15",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "gatsby-transformer-yaml": "^2.1.6",
+    "graphql-request": "^1.8.2",
+    "lodash": "^4.17.11",
+    "numeral": "^2.0.6",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "6.0.0-beta",
+    "react-scroll": "^1.7.10",
+    "ts-optchain": "^0.1.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build && cp _redirects public/ && cp src/static/sitemap.xml public/",
+    "start": "gatsby develop -p 4000",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.5",
+    "prettier": "^1.15.2",
+    "ts-node": "^8.1.0",
+    "typescript": "3.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "resolutions": {
+    "graphql": "14.0.2"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "app2",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "component-library",
+    "learn"
+  ],
+  "scripts": {
+    "build-client": "cd client && yarn build",
+    "build": "yarn build-client",
+    "dev": "cd client && yarn start",
+    "prettify": "prettier --write '{client}/{src,stories}/**/*.{tsx,ts,jsx,js}'",
+    "build-learn": "yarn && cd learn && yarn build"
+  },
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "yarn": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.2",
+    "prettier": "^1.13.5",
+    "typescript": "^3.0.0"
+  },
+  "resolutions": {
+    "graphql": "14.0.2",
+    "typescript": "3.4.5"
+  }
+}

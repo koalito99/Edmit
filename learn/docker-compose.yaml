@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  gatsby:
+    build:
+      dockerfile: Dockerfile-Build
+      context: .
+      args:
+        node_env: ${NODE_ENV}
+        graphcms_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJ0b2tlbklkIjoiNjA0NjY4NjktOTUzYS00NjVjLWI3YjQtNjA3Y2MxZjA2MTNmIn0._05An5R-i6aLm5Mzd9xeuP3WU2die9SGgy1ptZxRpxY
+        graphcms_base_url: https://api-useast.graphcms.com/v1/cjqmtnw0g0mu001cy4oqzp3qr/master
+        google_analytics_token: UA-108274424-3
+        google_analytics_cookie_domain: edmit.me
+        site_url: https://learn.edmit.me
+        generate_sitemaps: "true"

@@ -1,0 +1,19 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '--build-arg', 'node_env=production',
+    '--build-arg', 'generate_sitemaps=true',
+    '--build-arg', 'graphcms_token=${_GRAPHCMS_TOKEN}',
+    '--build-arg', 'graphcms_base_url=${_GRAPHCMS_BASE_URL}',
+    '--build-arg', 'google_analytics_token=${_GOOGLE_ANALYTICS_TOKEN}',
+    '--build-arg', 'google_analytics_cookie_domain=${_GOOGLE_ANALYTICS_COOKIE_DOMAIN}',
+    '--build-arg', 'site_url=${_SITE_URL}',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:latest',
+    '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA',
+    '.'
+  ]
+images: [
+    'gcr.io/$PROJECT_ID/$REPO_NAME:latest',
+    'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA'
+]

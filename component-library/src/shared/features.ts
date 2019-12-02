@@ -1,0 +1,28 @@
+
+export const featureIds = {
+  REGION_MIDWEST: '77D840A1-A3DC-4541-B229-95328EC12F93'.toLowerCase(),
+  REGION_NORTHEAST: '7505FBC1-C9F5-45BB-8269-429F2F6A0A7B'.toLowerCase(),
+  REGION_SOUTH: 'F460DD60-82D3-4B48-8895-0755D5F9B788'.toLowerCase(),
+  REGION_WEST: '548DBD0D-D7E1-42C5-99F5-CF0A13765347'.toLowerCase(),
+  SIZE_10000_TO_20000: '53BB201E-D25A-4B77-97BE-E7BFDB3BF849'.toLowerCase(),
+  SIZE_1000_TO_5000: 'A5E3462E-930A-4D0E-B992-13346E87930D'.toLowerCase(),
+  SIZE_5000_TO_10000: 'C7756CDA-B48B-4E34-884C-EADC279A4580'.toLowerCase(),
+  SIZE_ABOVE_20000: '64B3E714-8141-42C3-B9C1-34441FEBBCA6'.toLowerCase(),
+  SIZE_UNDER_1000: '1827C86A-828C-4026-999B-F3E5A1B51A59'.toLowerCase(),
+  TYPE_PRIVATE: '9D8B32AB-8558-48D7-AF93-2C3ADC4680DD'.toLowerCase(),
+  TYPE_PUBLIC: '72DB5883-7FD1-4A5C-A1BB-69F83AC232C6'.toLowerCase()
+};
+
+export const featureLabels = {
+  [featureIds.REGION_MIDWEST]: 'midwest',
+  [featureIds.REGION_NORTHEAST]: 'northeast',
+  [featureIds.REGION_SOUTH]: 'south',
+  [featureIds.REGION_WEST]: 'west',
+  [featureIds.SIZE_10000_TO_20000]: 'large',
+  [featureIds.SIZE_1000_TO_5000]: 'small',
+  [featureIds.SIZE_5000_TO_10000]: 'medium-sized',
+  [featureIds.SIZE_ABOVE_20000]: 'very large',
+  [featureIds.SIZE_UNDER_1000]: 'very small',
+  [featureIds.TYPE_PRIVATE]: 'private',
+  [featureIds.TYPE_PUBLIC]: 'public'
+};
